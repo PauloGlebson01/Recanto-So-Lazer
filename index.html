@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recanto Só Lazer | Cartão Digital Profissional</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Biblioteca QR Code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/Recanto-Só-Lazer-icon.png" type="image/x-icon">
+</head>
+
+<body class="dark">
+
+    <!-- CARD -->
+    <div class="card">
+
+        <!-- Toggle Tema -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
+            🌙
+        </button>
+
+        <!-- Botão Compartilhar -->
+        <button id="shareBtn" class="share-btn" aria-label="Compartilhar cartão">
+            🔗 Compartilhar
+        </button>
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./assets/Recanto-so-lazer.logo2.jpeg" alt="Recanto Só Lazer">
+        </div>
+
+        <!-- Nome -->
+        <h1>Recanto Só Lazer</h1>
+
+        <!-- Subtítulo -->
+        <p class="subtitle">
+            🎉 Casa de Festas & Eventos 🌿<br>
+            📍 Jacumã Village – Conde • PB
+        </p>
+
+        <!-- Destaques -->
+        <ul class="features">
+            <li>🎈 Ideal para festas e confraternizações</li>
+            <li>🏡 Espaço amplo e confortável</li>
+            <li>🌴 Ambiente familiar e reservado</li>
+            <li>🎶 Perfeito para eventos sociais</li>
+            <li>📅 Aluguel por diária ou evento</li>
+        </ul>
+
+        <!-- Botões -->
+        <div class="buttons">
+            <a href="https://wa.me/5583988054253?text=Olá,%20gostaria%20de%20informações%20sobre%20disponibilidade%20do%20Recanto%20Só%20Lazer."
+                target="_blank" class="btn whatsapp-btn">
+                📲 Falar no WhatsApp
+            </a>
+
+            <a href="https://www.instagram.com/recantosolazer" target="_blank" class="btn secondary">
+                📸 Ver fotos no Instagram
+            </a>
+
+            <a href="mailto:recantosolazerpb@gmail.com" class="btn secondary">
+                ✉️ Enviar e-mail
+            </a>
+        </div>
+
+        <!-- Contato -->
+        <p class="subtitle">
+            📞 <strong>Contato:</strong> (83) 98805-4253
+        </p>
+
+        <!-- Rodapé -->
+        <div class="footer">
+
+            <!-- Ícones sociais -->
+            <div class="footer-social">
+                <a href="https://wa.me/5583988054253?text=Olá,%20gostaria%20de%20informações%20sobre%20disponibilidade%20do%20Recanto%20Só%20Lazer." target="_blank" aria-label="WhatsApp">
+                    📲
+                </a>
+
+                <a href="https://www.instagram.com/recantosolazer" target="_blank" aria-label="Instagram">
+                    📸
+                </a>
+
+                <a href="mailto:recantosolazerpb@gmail.com" aria-label="E-mail">
+                    ✉️
+                </a>
+            </div>
+
+            <p>
+                © 2026 Recanto Só Lazer <br>
+                Casa de Festas & Eventos
+            </p>
+        </div>
+
+        <!-- MODAL COMPARTILHAR -->
+        <div id="shareModal" class="share-modal">
+            <div class="share-content">
+                <h3>Compartilhar cartão</h3>
+
+                <!-- QR Code -->
+                <div class="qr-box">
+                    <div class="qr-wrapper">
+                        <div id="qrcode"></div>
+                        <img src="./assets/Recanto-Só-Lazer-icon.png" alt="Logo" class="qr-logo">
+                    </div>
+                </div>
+
+                <button id="copyLinkBtn" class="share-action">
+                    📋 Copiar link
+                </button>
+
+                <button id="shareLinkBtn" class="share-action">
+                    🔗 Compartilhar
+                </button>
+
+                <button id="closeShare" class="close-share">
+                    Fechar
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
